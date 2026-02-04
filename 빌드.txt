@@ -1,0 +1,10 @@
+pip install pyinstaller requests beautifulsoup4 wcwidth bs4
+
+pyinstaller --onefile --name haksik 학식.py
+
+pyinstaller \
+  --onefile \
+  --name haksik \
+  --hidden-import=bs4 \
+  --hidden-import=bs4.element \
+  학식.py
